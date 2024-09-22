@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins';
+    background-color: rgb(214, 228, 228);
+    color: rgb(45, 44, 85);
+}
+h1 {
+   margin-left: 3%;
+}
+button {
+    padding: 10px;
+    font-family: 'Poppins';
+    font-weight: 650;
+    background: rgb(115, 147, 253);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: 200ms ease-in-out;
+}
+ button:hover {
+    scale: 1.08;
+ }
+
+
+ main {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 50%;
+    align-items: center;
+    border: none;
+    position: absolute;
+    background: rgb(236, 235, 235);
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+#registration {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+#registration input {
+    margin-bottom: 10%;
+    padding: 5px 10px ;
+    border: none;
+    border-radius: 3px;
+}
+#registration button {
+    margin-top: 10%;
+}

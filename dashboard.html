@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Dashboard</h1>
+
+        <div id="charts">
+            <h2>Chart based on total of users</h2>
+            <div id="chart-container">
+                <div id="Barc">
+                    <canvas id="BarChart"></canvas>
+                </div>
+                <div id="Piec">
+                    <canvas id="PieChart"></canvas>
+                </div>
+
+                <div>
+                    <h3>Download Details</h3>
+                    <button id="download">Download</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script type="module" src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</html>

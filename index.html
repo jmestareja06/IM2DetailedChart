@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrastion</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="dashboard.html">See responses</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Registrastion</h1>
+
+        <form method="POST" name="registration" id="registration">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Japan">Japan</option>
+                <option value="China">China</option>
+                <option value="Korea">Korea</option>
+                <option value="Russia">Russia</option>
+                <option value="Philippines">Philippines</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="module" src="script.js"></script>
+</html>
