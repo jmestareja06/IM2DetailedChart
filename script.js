@@ -48,7 +48,8 @@ if (registration) {
             Swal.fire({
                 icon: 'success',
                 title: 'Registration Successful',
-            })
+            });
+            registration.reset();
         } catch (error) {
             Swal.fire({
                 icon: 'error',
@@ -212,7 +213,7 @@ document.getElementById('download').addEventListener('click', () => {
             } else {
                 Swal.fire({
                     icon: 'error',
-                    title: 'Enter valid email and password',
+                    title: 'Your email was not authorized',
                     showConfirmButton: false,
                     timer: 1500
                 });
