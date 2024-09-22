@@ -53,3 +53,17 @@ button {
 #registration button {
     margin-top: 10%;
 }
+
+@media only screen and (max-width: 800px) {
+    main {
+        width: 80%;
+    }
+
+    #registration {
+        width: 70%;
+    }
+
+    #registration button {
+        width: 100%;
+    }
+}
