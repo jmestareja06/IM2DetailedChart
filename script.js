@@ -49,13 +49,14 @@ if (registration) {
                 icon: 'success',
                 title: 'Registration Successful',
             });
-            registration.reset();
         } catch (error) {
             Swal.fire({
                 icon: 'error',
                 title: 'Registration error',
             })
         }
+
+        registration.reset();
     });
 };
 
@@ -208,16 +209,19 @@ document.getElementById('download').addEventListener('click', () => {
     }).then((result) => {
         if (result.isConfirmed) {
             const { email, password } = result.value;
-            if (email && password) {
-                exportDetails();
-            } else {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Your email was not authorized',
-                    showConfirmButton: false,
-                    timer: 1500
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    exportDetails();
+                    signOut(auth);
+                })
+                .catch((error) => {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Your email was not authorized',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
                 });
-            }
         }
     });
 });
