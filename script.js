@@ -212,7 +212,9 @@ document.getElementById('download').addEventListener('click', () => {
             signInWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
                     exportDetails();
-                    signOut(auth);
+                    setTimeout(() => {
+                        signOut(auth);
+                    }, 5000);
                 })
                 .catch((error) => {
                     Swal.fire({
@@ -225,6 +227,7 @@ document.getElementById('download').addEventListener('click', () => {
         }
     });
 });
+
 
 async function exportDetails() {
     const user = auth.currentUser;
